@@ -1,4 +1,4 @@
-name: Bug Report
+name: Bug Report(Bug反馈)
 description: Create a report to help us improve
 title: "[Bug]: "
 labels: ["bug"]
@@ -6,7 +6,7 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: "注: 你可以使用中文来填写此issue."
+      value: "注: 你可以使用中文来填写此issue。"
 
   - type: dropdown
     id: OSver
@@ -21,7 +21,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Version Details
+      label: Version Details(版本信息)
       description: What version of ModManager do you use(你使用什么版本的ModManager)?
       placeholder: modmanager version
     validations:
@@ -54,7 +54,7 @@ body:
   - type: checkboxes
     id: know
     attributes:
-      label: knows
+      label: This issue is unique(这个issue是唯一的)
       options:
         - label: I have searched the issue tracker and did not find an issue describing my bug.
           required: true
@@ -66,3 +66,5 @@ body:
       description: |
         If applicable, add screenshots to help explain your problem.(如果可以请附上截图)
         Add any other context about the problem here.(添加其他关于此问题的说明)
+    validations:
+      required: false
