@@ -221,6 +221,7 @@ jobs:
         with:
           name: ${{github.event.repository.name}}-${{ matrix.qt_arch }}
           path: ${{github.workspace}}/deploy/
+
       - name: Create zip
         id: createzip
         shell: pwsh
